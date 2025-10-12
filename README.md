@@ -1,13 +1,73 @@
+# Welcome to your Lovable project
 
-## Contributing to Sensetrons
+## Project info
 
-We welcome contributions! Please follow these steps to participate in Hacktoberfest 2024:
+**URL**: https://lovable.dev/projects/03145c04-1e74-4424-8d5a-0b4ad467d973
 
-1. **Fork the Repository**: Click the "Fork" button on the top right of this page.
-2. **Clone Your Fork**: Use `git clone https://github.com/your-username/sensetrons-homepage.git` to clone your fork.
-3. **Create a Branch**: Create a new branch for your feature or fix using `git checkout -b feature/your-feature-name`.
-4. **Make Changes**: Implement your changes, ensuring you follow our coding standards.
-5. **Commit and Push**: Commit your changes with a clear message and push to your fork.
-6. **Create a Pull Request**: Go to the original repository and create a pull request.
+## How can I edit this code?
 
-For more details, please check our [CONTRIBUTING.md](./CONTRIBUTING.md).
+There are several ways of editing your application.
+
+**Use Lovable**
+
+Simply visit the [Lovable Project](https://lovable.dev/projects/03145c04-1e74-4424-8d5a-0b4ad467d973) and start prompting.
+
+Changes made via Lovable will be committed automatically to this repo.
+
+**Use your preferred IDE**
+
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+Follow these steps:
+
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
+
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
+
+# Step 3: Install the necessary dependencies.
+npm i
+
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
+
+**Edit a file directly in GitHub**
+
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
+
+**Use GitHub Codespaces**
+
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
+
+## What technologies are used for this project?
+
+This project is built with:
+
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
+
+## How can I deploy this project?
+
+Simply open [Lovable](https://lovable.dev/projects/03145c04-1e74-4424-8d5a-0b4ad467d973) and click on Share -> Publish.
+
+## Can I connect a custom domain to my Lovable project?
+
+Yes, you can!
+
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
