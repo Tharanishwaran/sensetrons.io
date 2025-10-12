@@ -86,13 +86,7 @@ SenseTrons.io actively collaborates with open-source and industry communities, i
 **Website:** [https://sensetrons.io](https://sensetrons.io)  
 **Email:** [contact@sensetrons.io](mailto:contact@sensetrons.io)  
 **LinkedIn:** [https://linkedin.com/company/sensetrons](https://linkedin.com/company/sensetrons)  
-**GitHub:** [https://github.com/sensetrons-io](https://github.com/sensetrons-io)
-
----
-
-## License
-
-All repositories and projects under SenseTrons.io are licensed under the **MIT License**, unless otherwise stated.
+**GitHub:** [https://github.com/sensetrons-io](https://github.com/Sensetrons/sensetrons.io/)
 
 ---
 
