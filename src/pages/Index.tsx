@@ -3,7 +3,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
 import { ServicesSection } from "@/components/ServicesSection";
 import { ContactSection } from "@/components/ContactSection";
-import companyLogo from "@/assets/company-logo.png";
+import companyLogo from "@/assets/company-logo.svg";
 
 const Index = () => {
   return (
