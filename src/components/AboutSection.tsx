@@ -30,7 +30,7 @@ const AboutSection = forwardRef<HTMLElement, AboutSectionProps>(
                     </span>
                   </h2>
                   <p className="text-2xl text-muted-foreground leading-relaxed">
-                    Senstrons stands at the forefront of technological innovation, 
+                    Sensetrons stands at the forefront of technological innovation, 
                     combining expertise in artificial intelligence, blockchain, 
                     operating systems, and modern web technologies.
                   </p>
