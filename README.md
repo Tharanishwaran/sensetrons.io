@@ -4,8 +4,9 @@
 
 **Innovating Intelligence. Securing the Future.**
 
-**SenseTrons.io** is a technology company specializing in **Artificial Intelligence (AI)**, **Cybersecurity**, and **Web Technologies**.
+**SenseTrons.io** is a technology company specializing in **Artificial Intelligence (AI)**, **Cybersecurity**, and **Web Technologies**.  
 We develop intelligent, secure, and scalable digital ecosystems that empower organizations to operate efficiently, adapt intelligently, and stay protected in the evolving digital landscape.
+
 
 ---
 
