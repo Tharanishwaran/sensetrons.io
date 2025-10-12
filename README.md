@@ -1,5 +1,3 @@
----
-
 # SenseTrons.io
 
 **Innovating Intelligence. Securing the Future.**
@@ -85,9 +83,9 @@ SenseTrons.io actively collaborates with open-source and industry communities, i
 
 ## Contact
 
-**Website:** [https://sensetrons.io](https://sensetrons.io)
-**Email:** [contact@sensetrons.io](mailto:contact@sensetrons.io)
-**LinkedIn:** [https://linkedin.com/company/sensetrons](https://linkedin.com/company/sensetrons)
+**Website:** [https://sensetrons.io](https://sensetrons.io)  
+**Email:** [contact@sensetrons.io](mailto:contact@sensetrons.io)  
+**LinkedIn:** [https://linkedin.com/company/sensetrons](https://linkedin.com/company/sensetrons)  
 **GitHub:** [https://github.com/sensetrons-io](https://github.com/sensetrons-io)
 
 ---
@@ -100,6 +98,8 @@ All repositories and projects under SenseTrons.io are licensed under the **MIT L
 
 ## Company Motto
 
-**Empowering Intelligence, Ensuring Security, and Engineering the Future.**
+**"Empowering Intelligence, Ensuring Security, and Engineering the Future."**
 
 ---
+
+
