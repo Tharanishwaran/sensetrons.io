@@ -1,24 +1,24 @@
---- 
+---
 
 # SenseTrons.io
 
 **Innovating Intelligence. Securing the Future.**
 
-**SenseTrons.io** is a technology company specializing in **Artificial Intelligence (AI)**, **Cybersecurity**, and **Web Technologies**.  
+**SenseTrons.io** is a technology company specializing in **Artificial Intelligence (AI)**, **Cybersecurity**, and **Web Technologies**.
 We develop intelligent, secure, and scalable digital ecosystems that empower organizations to operate efficiently, adapt intelligently, and stay protected in the evolving digital landscape.
-
 
 ---
 
 ## Vision
 
-To build a smarter and safer digital world through the convergence of **AI, Cybersecurity, and Cloud-based automation**.
+To build a smarter and safer digital world through the convergence of **AI**, **Cybersecurity**, and **Cloud-based automation**.
 
 ---
 
 ## Mission
 
-Our mission is to transform data into actionable intelligence and digital systems into adaptive, secure infrastructures. We aim to bridge the gap between innovation and reliability by delivering cutting-edge, sustainable technology solutions.
+Our mission is to transform data into actionable intelligence and digital systems into adaptive, secure infrastructures.
+We aim to bridge the gap between innovation and reliability by delivering cutting-edge, sustainable technology solutions.
 
 ---
 
@@ -66,7 +66,6 @@ Our mission is to transform data into actionable intelligence and digital system
 
 ## Current Initiatives
 
-
 * **MLOps Infrastructure:** Automated pipelines for continuous training, deployment, and monitoring of machine learning models.
 * **Cyber Threat Monitoring System:** An AI-integrated platform for anomaly detection and proactive security analytics.
 * **Modern Web Solutions:** Secure, responsive, and scalable web applications powered by AI-driven backends.
@@ -95,12 +94,12 @@ SenseTrons.io actively collaborates with open-source and industry communities, i
 
 ## License
 
-All repositories and projects under SenseTrons.io are licensed under the **MIT License**
+All repositories and projects under SenseTrons.io are licensed under the **MIT License**, unless otherwise stated.
 
 ---
 
 ## Company Motto
 
-**“Empowering Intelligence, Ensuring Security, and Engineering the Future.”**
+**Empowering Intelligence, Ensuring Security, and Engineering the Future.**
 
 ---
