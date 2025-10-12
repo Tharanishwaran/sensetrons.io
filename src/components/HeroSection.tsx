@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import { forwardRef } from "react";
-import companyLogo from "@/assets/company-logo.png";
+import companyLogo from "@/assets/company-logo.svg";
 
 interface HeroSectionProps extends React.HTMLAttributes<HTMLElement> {}
 
