@@ -27,7 +27,7 @@ const Navigation = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
                 <div className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-20 rounded-lg blur-md transition-all duration-500" />
               </div>
               <div className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent text-shadow-glow">
-                Senstrons
+                Sensetrons
               </div>
             </div>
             

@@ -40,7 +40,7 @@ const HeroSection = forwardRef<HTMLElement, HeroSectionProps>(
               <div className="inline-block p-8 glass-effect rounded-3xl shadow-massive hover:shadow-glow transition-all duration-700 transform-premium-hover group">
                 <img
                   src={companyLogo}
-                  alt="Senstrons Logo"
+                  alt="Sensetrons Logo"
                   className="w-24 h-24 mx-auto object-contain group-hover:scale-110 transition-all duration-500"
                   loading="eager"
                 />
