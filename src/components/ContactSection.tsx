@@ -36,7 +36,7 @@ const ContactSection = forwardRef<HTMLElement, ContactSectionProps>(
                   📧
                 </div>
                 <h3 className="text-2xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors duration-300">Email Us</h3>
-                <p className="text-muted-foreground text-lg group-hover:text-foreground transition-colors duration-300">hello@sensetrons.com</p>
+                <p className="text-muted-foreground text-lg group-hover:text-foreground transition-colors duration-300">contact@sensetrons.com</p>
                 <div className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-5 rounded-3xl transition-all duration-700" />
               </div>
               
@@ -54,7 +54,7 @@ const ContactSection = forwardRef<HTMLElement, ContactSectionProps>(
                   📞
                 </div>
                 <h3 className="text-2xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors duration-300">Call Us</h3>
-                <p className="text-muted-foreground text-lg group-hover:text-foreground transition-colors duration-300">+1 (555) 123-4567</p>
+                <p className="text-muted-foreground text-lg group-hover:text-foreground transition-colors duration-300">+91 7094399879</p>
                 <div className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-5 rounded-3xl transition-all duration-700" />
               </div>
             </div>
