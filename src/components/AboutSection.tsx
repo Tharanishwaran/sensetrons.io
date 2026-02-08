@@ -100,7 +100,7 @@ const AboutSection = forwardRef<HTMLElement, AboutSectionProps>(
                   <div className="grid grid-cols-3 gap-6 mt-12">
                     <div className="text-center group-hover:scale-110 transition-all duration-500">
                       <div className="text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent text-shadow-glow">
-                        10+
+                        2+
                       </div>
                       <div className="text-muted-foreground font-medium">
                         Years Experience
@@ -108,7 +108,7 @@ const AboutSection = forwardRef<HTMLElement, AboutSectionProps>(
                     </div>
                     <div className="text-center group-hover:scale-110 transition-all duration-500" style={{transitionDelay: '0.1s'}}>
                       <div className="text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent text-shadow-glow">
-                        50+
+                        15+
                       </div>
                       <div className="text-muted-foreground font-medium">
                         Projects Delivered
