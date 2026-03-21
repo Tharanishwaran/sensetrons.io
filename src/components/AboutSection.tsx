@@ -3,7 +3,6 @@ import engineeringCoreImage from "@/assets/projects/engineering_core.png";
 import companyLogo from "@/assets/company-logo.svg";
 import { cn } from "@/lib/utils";
 import { forwardRef } from "react";
-import { Rocket, Settings, Users } from "lucide-react";
 
 interface AboutSectionProps extends React.HTMLAttributes<HTMLElement> { }
 
