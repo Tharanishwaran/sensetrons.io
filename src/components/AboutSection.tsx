@@ -67,31 +67,42 @@ const AboutSection = forwardRef<HTMLElement, AboutSectionProps>(
                   ))}
                 </div>
               </div>
-
-              <div className="relative animate-reveal [animation-delay:600ms]">
-                <div className="aspect-square glass-effect rounded-[3rem] overflow-hidden border border-white/10 group shadow-2xl relative">
-                  {/* Background Image Layer */}
-                  <img
-                    src={engineeringCoreImage}
-                    alt="Engineering Excellence"
-                    className="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-105 transition-transform duration-1000"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
-
-                  {/* Top Badge */}
-                  <div className="absolute top-10 left-10 z-20">
-                    <div className="w-14 h-14 bg-black rounded-2xl border border-white/5 p-1 shadow-massive">
-                      <img src={companyLogo} alt="Logo" className="w-full h-full object-contain" />
+              
+              {/* Enhanced 3D Visual Element */}
+              <div className="relative animate-slide-up-elegant" style={{animationDelay: '0.4s'}}>
+                <div className="relative p-12 glass-effect rounded-3xl shadow-massive transform-premium-hover group border border-border/30">
+                  {/* Enhanced Animated 3D Elements */}
+                  <div className="w-full h-96 flex items-center justify-center relative">
+                    <div className="relative w-40 h-40 animate-float-premium">
+                      {/* Premium Cube Faces with enhanced effects */}
+                      <div className="absolute inset-0 bg-gradient-primary rounded-2xl shadow-glow transform perspective-1200 rotate-x-12 rotate-y-12 group-hover:rotate-x-6 group-hover:rotate-y-6 transition-all duration-700" />
+                      <div className="absolute inset-0 bg-primary-glow/40 rounded-2xl shadow-massive transform perspective-1200 rotate-x-12 rotate-y-12 translate-x-3 translate-y-3 group-hover:translate-x-6 group-hover:translate-y-6 transition-all duration-700" />
+                      <div className="absolute inset-0 glass-effect rounded-2xl border border-border/30 transform perspective-1200 rotate-x-12 rotate-y-12 translate-x-6 translate-y-6 group-hover:translate-x-9 group-hover:translate-y-9 transition-all duration-700" />
                     </div>
+                    
+                    {/* Floating particles */}
+                    <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary rounded-full animate-scale-pulse" />
+                    <div className="absolute bottom-1/4 right-1/4 w-3 h-3 bg-primary-glow rounded-full animate-scale-pulse" style={{animationDelay: '1s'}} />
+                    <div className="absolute top-3/4 left-3/4 w-1.5 h-1.5 bg-primary rounded-full animate-scale-pulse" style={{animationDelay: '2s'}} />
                   </div>
-
-                  {/* Centered Large Content */}
-                  <div className="absolute inset-0 p-12 flex flex-col justify-end z-10">
-                    <div className="mb-10">
-                      <h3 className="text-3xl font-bold tracking-tight text-white mb-2 font-outfit italic">Systems Architecture</h3>
-                      <p className="text-muted-foreground leading-relaxed text-sm max-w-xs">
-                        Delivering precision-engineered solutions with 2 years of technical mastery.
-                      </p>
+                  
+                  {/* Enhanced Stats */}
+                  <div className="grid grid-cols-3 gap-6 mt-12">
+                    <div className="text-center group-hover:scale-110 transition-all duration-500">
+                      <div className="text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent text-shadow-glow">
+                        2+
+                      </div>
+                      <div className="text-muted-foreground font-medium">
+                        Years Experience
+                      </div>
+                    </div>
+                    <div className="text-center group-hover:scale-110 transition-all duration-500" style={{transitionDelay: '0.1s'}}>
+                      <div className="text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent text-shadow-glow">
+                        15+
+                      </div>
+                      <div className="text-muted-foreground font-medium">
+                        Projects Delivered
+                      </div>
                     </div>
 
                     <div className="grid grid-cols-3 gap-8 pt-8 border-t border-white/10">

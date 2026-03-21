@@ -1,73 +1,99 @@
-# Welcome to your Lovable project
+# SenseTrons.io
 
-## Project info
+**Innovating Intelligence. Securing the Future.**
 
-**URL**: https://lovable.dev/projects/03145c04-1e74-4424-8d5a-0b4ad467d973
+**SenseTrons.io** is a technology company specializing in **Artificial Intelligence (AI)**, **Cybersecurity**, and **Web Technologies**.
+We develop intelligent, secure, and scalable digital ecosystems that empower organizations to operate efficiently, adapt intelligently, and stay protected in the evolving digital landscape.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## Vision
 
-**Use Lovable**
+To build a smarter and safer digital world through the convergence of **AI**, **Cybersecurity**, and **Cloud-based automation**.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/03145c04-1e74-4424-8d5a-0b4ad467d973) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## Mission
 
-**Use your preferred IDE**
+Our mission is to transform data into actionable intelligence and digital systems into adaptive, secure infrastructures.
+We aim to bridge the gap between innovation and reliability by delivering cutting-edge, sustainable technology solutions.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Core Domains
 
-Follow these steps:
+### Artificial Intelligence
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+* Computer Vision and Object Detection
+* Machine Learning and Deep Learning Solutions
+* Natural Language Processing (NLP)
+* Predictive Analytics and Data Modeling
+* AI-driven Automation and Decision Systems
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Cybersecurity
 
-# Step 3: Install the necessary dependencies.
-npm i
+* Threat Detection and Intrusion Prevention
+* Vulnerability Assessment and Penetration Testing
+* Cloud and Network Security Architecture
+* AI-powered Threat Intelligence and Risk Analysis
+* Secure DevOps (DevSecOps) Implementation
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+### Web Technologies
 
-**Edit a file directly in GitHub**
+* Full-Stack Web and Mobile Application Development
+* RESTful and GraphQL API Design
+* Scalable Cloud-Native Web Solutions
+* Data Visualization and Real-time Analytics
+* Progressive Web Applications (PWA)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## Technology Stack
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+| Category            | Technologies                                              |
+| ------------------- | --------------------------------------------------------- |
+| **Frontend**        | React.js, Next.js, TypeScript, Tailwind CSS               |
+| **Backend**         | Django, Node.js, Go, Spring Boot                          |
+| **AI/ML**           | TensorFlow, PyTorch, OpenCV, scikit-learn                 |
+| **Cybersecurity**   | Wireshark, Burp Suite, Metasploit, Snort, OSINT Framework |
+| **Cloud & DevOps**  | AWS, Docker, Kubernetes, Terraform, Jenkins               |
+| **Databases**       | PostgreSQL, MySQL, MongoDB                                |
+| **Version Control** | Git, GitHub, GitLab                                       |
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## Current Initiatives
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+* **MLOps Infrastructure:** Automated pipelines for continuous training, deployment, and monitoring of machine learning models.
+* **Cyber Threat Monitoring System:** An AI-integrated platform for anomaly detection and proactive security analytics.
+* **Modern Web Solutions:** Secure, responsive, and scalable web applications powered by AI-driven backends.
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/03145c04-1e74-4424-8d5a-0b4ad467d973) and click on Share -> Publish.
+## Community and Collaboration
 
-## Can I connect a custom domain to my Lovable project?
+SenseTrons.io actively collaborates with open-source and industry communities, including:
 
-Yes, you can!
+* The Linux Foundation
+* Cloud Native Computing Foundation (CNCF)
+* Layer5
+* TensorFlow and OpenAI ecosystems
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Contact
+
+**Website:** [https://sensetrons.io](https://sensetrons.io)  
+**Email:** [contact@sensetrons.io](mailto:contact@sensetrons.io)  
+**LinkedIn:** [https://linkedin.com/company/sensetrons](https://linkedin.com/company/sensetrons)  
+**GitHub:** [https://github.com/sensetrons-io](https://github.com/Sensetrons/sensetrons.io/)
+
+---
+
+## Company Motto
+
+**"Empowering Intelligence, Ensuring Security, and Engineering the Future."**
+
+---
+
+
