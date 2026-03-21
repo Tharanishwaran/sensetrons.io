@@ -1,5 +1,8 @@
+import engineeringCoreImage from "@/assets/projects/engineering_core.png";
+import companyLogo from "@/assets/company-logo.svg";
 import { cn } from "@/lib/utils";
 import { forwardRef } from "react";
+import { Rocket, Settings, Users } from "lucide-react";
 
 interface AboutSectionProps extends React.HTMLAttributes<HTMLElement> { }
 
@@ -34,73 +37,79 @@ const AboutSection = forwardRef<HTMLElement, AboutSectionProps>(
                   {[
                     {
                       title: "Innovation Driven",
-                      desc: "We don't just follow trends; we set them through rigorous R&D."
+                      desc: "We don't just follow trends; we set them through rigorous R&D and deep-tech focus.",
+                      icon: Rocket
                     },
                     {
                       title: "Technical Mastery",
-                      desc: "Our engineers possess deep expertise in modern tech stacks and architectures."
+                      desc: "Our engineers possess deep expertise in microservices and low-level architectures.",
+                      icon: Settings
                     },
                     {
                       title: "Partner-Centric",
-                      desc: "We treat your project as our own, ensuring long-term success and scalability."
+                      desc: "We treat your project as our own, ensuring long-term success and scalability.",
+                      icon: Users
                     }
                   ].map((item, i) => (
                     <div
                       key={item.title}
-                      className="p-6 glass-effect rounded-2xl hover-lift animate-reveal"
+                      className="p-6 glass-effect rounded-2xl hover-lift animate-reveal flex items-start space-x-6 border-white/5"
                       style={{ animationDelay: `${(i + 3) * 100}ms` }}
                     >
-                      <h3 className="text-xl font-bold mb-2 text-foreground">{item.title}</h3>
-                      <p className="text-muted-foreground">{item.desc}</p>
+                      <div className="w-12 h-12 bg-white/5 rounded-xl flex-shrink-0 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                        <item.icon className="w-6 h-6" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold mb-2 text-foreground font-outfit tracking-tight">{item.title}</h3>
+                        <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+                      </div>
                     </div>
                   ))}
                 </div>
               </div>
-              
-              {/* Enhanced 3D Visual Element */}
-              <div className="relative animate-slide-up-elegant" style={{animationDelay: '0.4s'}}>
-                <div className="relative p-12 glass-effect rounded-3xl shadow-massive transform-premium-hover group border border-border/30">
-                  {/* Enhanced Animated 3D Elements */}
-                  <div className="w-full h-96 flex items-center justify-center relative">
-                    <div className="relative w-40 h-40 animate-float-premium">
-                      {/* Premium Cube Faces with enhanced effects */}
-                      <div className="absolute inset-0 bg-gradient-primary rounded-2xl shadow-glow transform perspective-1200 rotate-x-12 rotate-y-12 group-hover:rotate-x-6 group-hover:rotate-y-6 transition-all duration-700" />
-                      <div className="absolute inset-0 bg-primary-glow/40 rounded-2xl shadow-massive transform perspective-1200 rotate-x-12 rotate-y-12 translate-x-3 translate-y-3 group-hover:translate-x-6 group-hover:translate-y-6 transition-all duration-700" />
-                      <div className="absolute inset-0 glass-effect rounded-2xl border border-border/30 transform perspective-1200 rotate-x-12 rotate-y-12 translate-x-6 translate-y-6 group-hover:translate-x-9 group-hover:translate-y-9 transition-all duration-700" />
+
+              <div className="relative animate-reveal [animation-delay:600ms]">
+                <div className="aspect-square glass-effect rounded-[2.5rem] p-12 flex flex-col justify-center border border-primary/20 relative overflow-hidden group">
+                  <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+                  {/* Creative Identity Core */}
+                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 flex items-center justify-center">
+                    <div className="absolute inset-4 border-2 border-primary/10 rounded-full animate-spin-slow" />
+                    <div className="absolute inset-8 border border-primary/30 rounded-full animate-spin-reverse" />
+                    <div className="absolute inset-16 overflow-hidden rounded-full border border-white/10 shadow-massive rotate-12 transition-transform group-hover:rotate-0 duration-1000">
+                      <img
+                        src={engineeringCoreImage}
+                        alt="Engineering Core"
+                        className="w-full h-full object-cover scale-150 group-hover:scale-100 transition-all duration-1000 opacity-60 group-hover:opacity-100"
+                      />
+                      <div className="absolute inset-0 bg-primary/10 mix-blend-overlay" />
                     </div>
-                    
-                    {/* Floating particles */}
-                    <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary rounded-full animate-scale-pulse" />
-                    <div className="absolute bottom-1/4 right-1/4 w-3 h-3 bg-primary-glow rounded-full animate-scale-pulse" style={{animationDelay: '1s'}} />
-                    <div className="absolute top-3/4 left-3/4 w-1.5 h-1.5 bg-primary rounded-full animate-scale-pulse" style={{animationDelay: '2s'}} />
+                    {/* Centered Logo Badge - TRUE BLACK & LARGE S */}
+                    <div className="absolute inset-0 flex items-center justify-center z-30">
+                      <div className="w-14 h-14 bg-black rounded-2xl border border-white/5 p-1 shadow-glow animate-float-subtle">
+                        <img src={companyLogo} alt="Logo" className="w-full h-full object-contain" />
+                      </div>
+                    </div>
                   </div>
-                  
-                  {/* Enhanced Stats */}
-                  <div className="grid grid-cols-3 gap-6 mt-12">
-                    <div className="text-center group-hover:scale-110 transition-all duration-500">
-                      <div className="text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent text-shadow-glow">
-                        2+
-                      </div>
-                      <div className="text-muted-foreground font-medium">
-                        Years Experience
-                      </div>
+
+                  {/* Stats Overlay */}
+                  <div className="mt-auto relative z-10 flex justify-between items-end border-t border-primary/10 pt-10 opacity-80 group-hover:opacity-100 transition-all duration-500">
+                    <div className="text-center group-hover:-translate-y-1 transition-transform">
+                      <div className="text-3xl font-black text-primary">2+</div>
+                      <div className="text-[10px] uppercase tracking-[0.2em] font-bold text-muted-foreground mt-1">Years</div>
                     </div>
-                    <div className="text-center group-hover:scale-110 transition-all duration-500" style={{transitionDelay: '0.1s'}}>
-                      <div className="text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent text-shadow-glow">
-                        15+
-                      </div>
-                      <div className="text-muted-foreground font-medium">
-                        Projects Delivered
-                      </div>
+                    <div className="text-center group-hover:-translate-y-1 transition-transform delay-75">
+                      <div className="text-3xl font-black text-primary">50+</div>
+                      <div className="text-[10px] uppercase tracking-[0.2em] font-bold text-muted-foreground mt-1">Projects</div>
                     </div>
-                    <div className="text-center">
-                      <div className="text-6xl font-black text-primary mb-2">100%</div>
-                      <div className="text-sm uppercase tracking-[0.2em] font-bold text-muted-foreground">Client Success</div>
+                    <div className="text-center group-hover:-translate-y-1 transition-transform delay-150">
+                      <div className="text-3xl font-black text-primary">100%</div>
+                      <div className="text-[10px] uppercase tracking-[0.2em] font-bold text-muted-foreground mt-1">Success</div>
                     </div>
                   </div>
                 </div>
 
-                {/* Decorative blob */}
+                {/* Decorative blobs */}
                 <div className="absolute -top-10 -right-10 w-40 h-40 bg-primary/20 rounded-full blur-3xl -z-10" />
                 <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl -z-10" />
               </div>
