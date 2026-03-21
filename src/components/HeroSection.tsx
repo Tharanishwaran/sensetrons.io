@@ -26,7 +26,7 @@ const HeroSection = forwardRef<HTMLElement, HeroSectionProps>(
           <div className="max-w-4xl mx-auto text-center">
             {/* Company Logo Display */}
             <div className="flex justify-center mb-10 animate-reveal">
-              <div className="w-24 h-24 bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-4 shadow-2xl shadow-primary/20 flex items-center justify-center">
+              <div className="w-54 h-64 bg-black border border-white/5 shadow-massive rounded-[3.5rem] p-12 flex items-center justify-center transition-all duration-300">
                 <img
                   src={companyLogo}
                   alt="Sensetrons Logo"

@@ -30,7 +30,7 @@ const ContactSection = forwardRef<HTMLElement, ContactSectionProps>(
               {[
                 { icon: Mail, label: "Email Us", value: "hello@sensetrons.com" },
                 { icon: MessageSquare, label: "Live Chat", value: "Available 24/7" },
-                { icon: Phone, label: "Call Us", value: "+1 (555) 123-4567" }
+                { icon: Phone, label: "Call Us", value: "+91 " }
               ].map((item, i) => (
                 <div key={item.label} className="p-8 glass-effect rounded-2xl text-center hover-lift border-white/5">
                   <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-6 text-primary">
