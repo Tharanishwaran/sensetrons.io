@@ -10,10 +10,10 @@ export const Footer = () => {
                             <img
                                 src={companyLogo}
                                 alt="Sensetrons"
-                                className="w-8 h-8 object-contain"
+                                className="w-12 h-12 object-contain"
                                 loading="lazy"
                             />
-                            <span className="text-xl font-bold tracking-tight">
+                            <span className="text-2xl font-bold tracking-tight">
                                 Sensetrons
                             </span>
                         </div>

@@ -1,3 +1,4 @@
+import { Rocket, Settings, Users } from "lucide-react";
 import engineeringCoreImage from "@/assets/projects/engineering_core.png";
 import companyLogo from "@/assets/company-logo.svg";
 import { cn } from "@/lib/utils";
