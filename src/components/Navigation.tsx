@@ -20,16 +20,16 @@ const Navigation = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
       >
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <Link to="/" className="flex items-center space-x-3 group">
-              <div className="relative">
+            <Link to="/" className="flex items-center space-x-4 group">
+              <div className="w-10 h-10 bg-white/10 rounded-xl border border-white/10 flex items-center justify-center p-1.5 shadow-lg group-hover:bg-white/20 transition-all duration-300">
                 <img
                   src={companyLogo}
                   alt="Sensetrons"
-                  className="w-10 h-10 object-contain brightness-0 invert opacity-90 group-hover:opacity-100 transition-all duration-300"
+                  className="w-full h-full object-contain"
                   loading="eager"
                 />
               </div>
-              <span className="text-xl font-bold tracking-tight text-foreground/90 group-hover:text-foreground transition-colors duration-300">
+              <span className="text-xl font-bold tracking-tight text-foreground transition-all duration-300">
                 Sensetrons
               </span>
             </Link>
@@ -41,14 +41,25 @@ const Navigation = forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
                 { name: "Projects", path: "/projects", hash: "#projects" },
                 { name: "Contact", path: "/contact", hash: "#contact" }
               ].map((item) => (
-                <Link
-                  key={item.name}
-                  to={isHome ? item.hash : item.path}
-                  className="text-sm font-medium text-muted-foreground hover:text-foreground transition-all duration-300 relative group py-2"
-                >
-                  {item.name}
-                  <span className="absolute bottom-0 left-0 w-0 h-px bg-primary transition-all duration-300 group-hover:w-full" />
-                </Link>
+                isHome ? (
+                  <a
+                    key={item.name}
+                    href={item.hash}
+                    className="text-sm font-medium text-muted-foreground hover:text-foreground transition-all duration-300 relative group py-2"
+                  >
+                    {item.name}
+                    <span className="absolute bottom-0 left-0 w-0 h-px bg-primary transition-all duration-300 group-hover:w-full" />
+                  </a>
+                ) : (
+                  <Link
+                    key={item.name}
+                    to={item.path}
+                    className="text-sm font-medium text-muted-foreground hover:text-foreground transition-all duration-300 relative group py-2"
+                  >
+                    {item.name}
+                    <span className="absolute bottom-0 left-0 w-0 h-px bg-primary transition-all duration-300 group-hover:w-full" />
+                  </Link>
+                )
               ))}
               <Link
                 to="/contact"

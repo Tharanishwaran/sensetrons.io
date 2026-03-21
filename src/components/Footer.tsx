@@ -10,7 +10,7 @@ export const Footer = () => {
                             <img
                                 src={companyLogo}
                                 alt="Sensetrons"
-                                className="w-8 h-8 object-contain brightness-0 invert opacity-80"
+                                className="w-8 h-8 object-contain"
                                 loading="lazy"
                             />
                             <span className="text-xl font-bold tracking-tight">
@@ -55,9 +55,7 @@ export const Footer = () => {
                 <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center text-xs text-muted-foreground">
                     <p>© 2026 Sensetrons Engineering. All rights reserved.</p>
                     <div className="flex space-x-6 mt-4 md:mt-0">
-                        <button className="hover:text-primary transition-colors">Twitter</button>
-                        <button className="hover:text-primary transition-colors">LinkedIn</button>
-                        <button className="hover:text-primary transition-colors">GitHub</button>
+                        <a href="https://www.linkedin.com/company/sensetrons" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors font-bold uppercase tracking-widest">LinkedIn</a>
                     </div>
                 </div>
             </div>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { forwardRef } from "react";
 import {
@@ -78,6 +79,13 @@ const ServicesSection = forwardRef<HTMLElement, ServicesSectionProps>(
                 <p className="text-muted-foreground leading-relaxed">{service.description}</p>
               </div>
             ))}
+          </div>
+
+          <div className="mt-20 text-center animate-reveal">
+            <Link to="/services" className="px-8 py-4 glass-effect rounded-full font-bold text-lg hover-lift group border-primary/20 inline-block">
+              Learn More About Our Services
+              <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
+            </Link>
           </div>
         </div>
       </section>
