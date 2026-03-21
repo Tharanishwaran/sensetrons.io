@@ -1,38 +1,48 @@
 import { cn } from "@/lib/utils";
 import { forwardRef } from "react";
-import iconAI from "@/assets/icon-ai.png";
-import iconBlockchain from "@/assets/icon-blockchain.png";
-import iconOS from "@/assets/icon-os.png";
-import iconWeb from "@/assets/icon-web.png";
+import {
+  Code2,
+  BrainCircuit,
+  Smartphone,
+  Cloud,
+  Database,
+  ShieldCheck
+} from "lucide-react";
 
-interface ServicesSectionProps extends React.HTMLAttributes<HTMLElement> {}
+interface ServicesSectionProps extends React.HTMLAttributes<HTMLElement> { }
 
 const ServicesSection = forwardRef<HTMLElement, ServicesSectionProps>(
   ({ className, ...props }, ref) => {
     const services = [
       {
-        title: "Artificial Intelligence",
-        description: "Advanced AI solutions including machine learning, neural networks, and intelligent automation systems.",
-        icon: iconAI,
-        features: ["Machine Learning Models", "Neural Networks", "AI Automation", "Predictive Analytics"]
+        title: "Bespoke Engineering",
+        description: "Tailored software solutions designed for high-stakes business environments.",
+        icon: Code2,
       },
       {
-        title: "Blockchain Technology",
-        description: "Secure, decentralized solutions for modern digital transactions and smart contract development.",
-        icon: iconBlockchain,
-        features: ["Smart Contracts", "DeFi Solutions", "NFT Platforms", "Cryptocurrency Systems"]
+        title: "AI Ecosystems",
+        description: "Intelligent automation and predictive systems powered by custom-trained neural networks.",
+        icon: BrainCircuit,
       },
       {
-        title: "OS Kernel Development",
-        description: "Low-level system programming and custom operating system kernel development.",
-        icon: iconOS,
-        features: ["Custom Kernels", "System Optimization", "Hardware Integration", "Performance Tuning"]
+        title: "Mobile Architecture",
+        description: "High-performance native and cross-platform mobile experiences.",
+        icon: Smartphone,
       },
       {
-        title: "Web Technologies",
-        description: "Modern web applications with cutting-edge frameworks and responsive design principles.",
-        icon: iconWeb,
-        features: ["React & Next.js", "Cloud Architecture", "API Development", "Progressive Web Apps"]
+        title: "Cloud Strategy",
+        description: "Scalable infrastructure and automated deployment for zero-downtime operations.",
+        icon: Cloud,
+      },
+      {
+        title: "Web3 & Security",
+        description: "Decentralized systems and smart contract audits for secure digital assets.",
+        icon: Database,
+      },
+      {
+        title: "Strategic Consulting",
+        description: "Technical roadmaps and architecture reviews to future-proof your business.",
+        icon: ShieldCheck,
       }
     ];
 
@@ -40,88 +50,36 @@ const ServicesSection = forwardRef<HTMLElement, ServicesSectionProps>(
       <section
         ref={ref}
         id="services"
-        className={cn(
-          "py-32 relative overflow-hidden",
-          "bg-gradient-card",
-          className
-        )}
+        className={cn("py-32 bg-background relative overflow-hidden", className)}
         {...props}
       >
-        {/* Enhanced Background Effects */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-gradient-primary rounded-full blur-3xl animate-float-premium" style={{animationDelay: '1s'}} />
-          <div className="absolute bottom-1/4 left-1/3 w-64 h-64 bg-primary-glow/30 rounded-full blur-2xl animate-mesh-flow" />
-        </div>
-        
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-5xl mx-auto text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-bold mb-8 animate-slide-up-elegant">
-              <span className="bg-gradient-primary bg-clip-text text-transparent text-shadow-glow">
-                Our Expertise
-              </span>
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl mb-20 animate-reveal">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 tracking-tight">
+              Our <span className="text-primary italic">Expertise</span>
             </h2>
-            <p className="text-2xl text-muted-foreground max-w-3xl mx-auto animate-slide-up-elegant" style={{animationDelay: '0.2s'}}>
-              We specialize in cutting-edge technologies that drive innovation 
-              and transform industries with premium solutions.
+            <p className="text-xl text-muted-foreground leading-relaxed">
+              We provide end-to-end technical solutions that enable organizations
+              to scale and innovate at speed.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-7xl mx-auto">
-            {services.map((service, index) => (
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {services.map((service, i) => (
               <div
                 key={service.title}
-                className="group relative p-10 glass-effect rounded-3xl border border-border/30 shadow-massive hover:shadow-glow transition-all duration-700 transform-premium-hover overflow-hidden"
-                style={{
-                  animationDelay: `${index * 0.15}s`
-                }}
+                className="group p-8 glass-effect rounded-2xl hover-lift animate-reveal border-white/5"
+                style={{ animationDelay: `${i * 100}ms` }}
               >
-                {/* Premium 3D Effect Overlay */}
-                <div className="absolute inset-0 bg-gradient-primary rounded-3xl opacity-0 group-hover:opacity-10 transition-all duration-700" />
-                <div className="absolute -inset-1 bg-gradient-primary blur-xl opacity-0 group-hover:opacity-20 transition-all duration-700" />
-                
-                {/* Enhanced Service Icon */}
-                <div className="mb-8 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 w-20 h-20">
-                  <img 
-                    src={service.icon} 
-                    alt={service.title}
-                    className="w-full h-full object-contain drop-shadow-2xl"
-                  />
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
+                  <service.icon className="w-6 h-6" />
                 </div>
-                
-                {/* Service Title */}
-                <h3 className="text-3xl font-bold mb-6 text-foreground group-hover:text-primary transition-all duration-500 text-shadow-glow">
-                  {service.title}
-                </h3>
-                
-                {/* Service Description */}
-                <p className="text-muted-foreground mb-8 leading-relaxed text-lg group-hover:text-foreground transition-colors duration-500">
-                  {service.description}
-                </p>
-                
-                {/* Enhanced Service Features */}
-                <div className="space-y-4">
-                  {service.features.map((feature, featureIndex) => (
-                    <div
-                      key={feature}
-                      className="flex items-center text-muted-foreground group-hover:text-foreground transition-all duration-500"
-                      style={{transitionDelay: `${featureIndex * 0.1}s`}}
-                    >
-                      <div className="w-3 h-3 bg-gradient-primary rounded-full mr-4 group-hover:shadow-glow group-hover:scale-125 transition-all duration-500" />
-                      <span className="font-medium">{feature}</span>
-                    </div>
-                  ))}
-                </div>
-                
-                {/* Premium Progress Bar */}
-                <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-primary rounded-b-3xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left shadow-glow" />
+                <h3 className="text-xl font-bold mb-3">{service.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">{service.description}</p>
               </div>
             ))}
           </div>
         </div>
-        
-        {/* Enhanced Background Decoration */}
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-primary opacity-5 blur-3xl animate-mesh-flow" />
-        <div className="absolute bottom-0 left-0 w-1/3 h-2/3 bg-primary-glow opacity-10 blur-2xl animate-float-premium" style={{animationDelay: '4s'}} />
       </section>
     );
   }

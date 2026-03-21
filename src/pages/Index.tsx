@@ -2,39 +2,20 @@ import { Navigation } from "@/components/Navigation";
 import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
 import { ServicesSection } from "@/components/ServicesSection";
+import { ProjectsSection } from "@/components/ProjectsSection";
 import { ContactSection } from "@/components/ContactSection";
-import companyLogo from "@/assets/company-logo.svg";
+import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground scroll-smooth">
       <Navigation />
       <HeroSection />
       <AboutSection />
       <ServicesSection />
+      <ProjectsSection />
       <ContactSection />
-      
-      {/* Footer */}
-      <footer className="py-8 bg-card border-t border-border">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="flex items-center space-x-3 mb-4 md:mb-0">
-              <img
-                src={companyLogo}
-                alt="Sensetrons Logo"
-                className="w-8 h-8 object-contain"
-                loading="lazy"
-              />
-              <span className="text-lg font-semibold bg-gradient-primary bg-clip-text text-transparent">
-                Sensetrons
-              </span>
-            </div>
-            <p className="text-sm text-muted-foreground">
-              © 2024 Sensetrons. Pioneering the future of technology.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

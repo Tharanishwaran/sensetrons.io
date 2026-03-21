@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import { forwardRef } from "react";
 
-interface AboutSectionProps extends React.HTMLAttributes<HTMLElement> {}
+interface AboutSectionProps extends React.HTMLAttributes<HTMLElement> { }
 
 const AboutSection = forwardRef<HTMLElement, AboutSectionProps>(
   ({ className, ...props }, ref) => {
@@ -10,71 +10,50 @@ const AboutSection = forwardRef<HTMLElement, AboutSectionProps>(
         ref={ref}
         id="about"
         className={cn(
-          "py-32 relative overflow-hidden",
-          "bg-background mesh-background",
+          "py-32 relative overflow-hidden bg-background",
           className
         )}
         {...props}
       >
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-              {/* Enhanced Content */}
-              <div className="space-y-10">
-                <div className="animate-slide-up-elegant">
-                  <h2 className="text-5xl md:text-6xl font-bold mb-8 text-shadow-glow">
-                    <span className="text-foreground leading-tight">Building the</span>
-                    <br />
-                    <span className="bg-gradient-primary bg-clip-text text-transparent leading-tight">
-                      Digital Future
-                    </span>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <div className="space-y-12">
+                <div className="animate-reveal">
+                  <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
+                    Beyond Code: <br />
+                    <span className="text-primary tracking-tighter">Engineering Excellence</span>
                   </h2>
-                  <p className="text-2xl text-muted-foreground leading-relaxed">
-                    Sensetrons stands at the forefront of technological innovation, 
-                    combining expertise in artificial intelligence, blockchain, 
-                    operating systems, and modern web technologies.
+                  <p className="text-xl text-muted-foreground leading-relaxed max-w-xl">
+                    For 2 years, Sensetrons has been at the forefront of digital transformation,
+                    bridging the gap between complex technical challenges and elegant software solutions.
                   </p>
                 </div>
-                
-                <div className="space-y-8 animate-slide-up-elegant" style={{animationDelay: '0.2s'}}>
-                  <div className="group flex items-start space-x-6 p-6 glass-effect rounded-2xl border border-border/30 hover:shadow-3d transition-all duration-500 transform-premium-hover">
-                    <div className="w-4 h-4 bg-gradient-primary rounded-full mt-2 shadow-glow group-hover:scale-150 transition-all duration-500" />
-                    <div>
-                      <h3 className="text-2xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors duration-300">
-                        Innovation-Driven
-                      </h3>
-                      <p className="text-muted-foreground text-lg leading-relaxed group-hover:text-foreground transition-colors duration-300">
-                        We push the boundaries of what's possible with cutting-edge 
-                        research and development.
-                      </p>
+
+                <div className="grid grid-cols-1 gap-6">
+                  {[
+                    {
+                      title: "Innovation Driven",
+                      desc: "We don't just follow trends; we set them through rigorous R&D."
+                    },
+                    {
+                      title: "Technical Mastery",
+                      desc: "Our engineers possess deep expertise in modern tech stacks and architectures."
+                    },
+                    {
+                      title: "Partner-Centric",
+                      desc: "We treat your project as our own, ensuring long-term success and scalability."
+                    }
+                  ].map((item, i) => (
+                    <div
+                      key={item.title}
+                      className="p-6 glass-effect rounded-2xl hover-lift animate-reveal"
+                      style={{ animationDelay: `${(i + 3) * 100}ms` }}
+                    >
+                      <h3 className="text-xl font-bold mb-2 text-foreground">{item.title}</h3>
+                      <p className="text-muted-foreground">{item.desc}</p>
                     </div>
-                  </div>
-                  
-                  <div className="group flex items-start space-x-6 p-6 glass-effect rounded-2xl border border-border/30 hover:shadow-3d transition-all duration-500 transform-premium-hover">
-                    <div className="w-4 h-4 bg-gradient-primary rounded-full mt-2 shadow-glow group-hover:scale-150 transition-all duration-500" />
-                    <div>
-                      <h3 className="text-2xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors duration-300">
-                        Technical Excellence
-                      </h3>
-                      <p className="text-muted-foreground text-lg leading-relaxed group-hover:text-foreground transition-colors duration-300">
-                        Our team combines deep technical knowledge with practical 
-                        implementation expertise.
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="group flex items-start space-x-6 p-6 glass-effect rounded-2xl border border-border/30 hover:shadow-3d transition-all duration-500 transform-premium-hover">
-                    <div className="w-4 h-4 bg-gradient-primary rounded-full mt-2 shadow-glow group-hover:scale-150 transition-all duration-500" />
-                    <div>
-                      <h3 className="text-2xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors duration-300">
-                        Future-Focused
-                      </h3>
-                      <p className="text-muted-foreground text-lg leading-relaxed group-hover:text-foreground transition-colors duration-300">
-                        We build solutions that scale and adapt to tomorrow's 
-                        technological landscape.
-                      </p>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
               
@@ -114,27 +93,20 @@ const AboutSection = forwardRef<HTMLElement, AboutSectionProps>(
                         Projects Delivered
                       </div>
                     </div>
-                    <div className="text-center group-hover:scale-110 transition-all duration-500" style={{transitionDelay: '0.2s'}}>
-                      <div className="text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent text-shadow-glow">
-                        24/7
-                      </div>
-                      <div className="text-muted-foreground font-medium">
-                        Support
-                      </div>
+                    <div className="text-center">
+                      <div className="text-6xl font-black text-primary mb-2">100%</div>
+                      <div className="text-sm uppercase tracking-[0.2em] font-bold text-muted-foreground">Client Success</div>
                     </div>
                   </div>
                 </div>
-                
-                {/* Enhanced Background Glow */}
-                <div className="absolute -inset-8 bg-gradient-primary opacity-20 blur-3xl rounded-3xl -z-10 animate-glow-pulse-premium" />
+
+                {/* Decorative blob */}
+                <div className="absolute -top-10 -right-10 w-40 h-40 bg-primary/20 rounded-full blur-3xl -z-10" />
+                <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl -z-10" />
               </div>
             </div>
           </div>
         </div>
-        
-        {/* Enhanced Background Elements */}
-        <div className="absolute top-1/4 left-0 w-1/3 h-1/2 bg-primary-glow opacity-10 blur-3xl animate-mesh-flow" />
-        <div className="absolute bottom-0 right-0 w-2/5 h-3/4 bg-gradient-primary opacity-10 blur-3xl animate-float-premium" style={{animationDelay: '2s'}} />
       </section>
     );
   }

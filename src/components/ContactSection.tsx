@@ -1,7 +1,9 @@
 import { cn } from "@/lib/utils";
 import { forwardRef } from "react";
 
-interface ContactSectionProps extends React.HTMLAttributes<HTMLElement> {}
+import { Mail, MessageSquare, Phone } from "lucide-react";
+
+interface ContactSectionProps extends React.HTMLAttributes<HTMLElement> { }
 
 const ContactSection = forwardRef<HTMLElement, ContactSectionProps>(
   ({ className, ...props }, ref) => {
@@ -9,11 +11,7 @@ const ContactSection = forwardRef<HTMLElement, ContactSectionProps>(
       <section
         ref={ref}
         id="contact"
-        className={cn(
-          "py-32 relative overflow-hidden",
-          "bg-gradient-subtle mesh-background",
-          className
-        )}
+        className={cn("py-32 bg-background relative overflow-hidden", className)}
         {...props}
       >
         <div className="container mx-auto px-6 relative z-10">
@@ -58,19 +56,12 @@ const ContactSection = forwardRef<HTMLElement, ContactSectionProps>(
                 <div className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-5 rounded-3xl transition-all duration-700" />
               </div>
             </div>
-            
-            <button className="group relative px-16 py-6 bg-gradient-primary text-primary-foreground rounded-3xl font-bold text-xl shadow-massive hover:shadow-glow transition-all duration-700 transform-premium-hover overflow-hidden animate-slide-up-elegant" style={{animationDelay: '0.6s'}}>
-              <span className="relative z-10">Start Your Project</span>
-              <div className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-100 transition-opacity duration-700 animate-glow-pulse-premium" />
-              <div className="absolute -inset-2 bg-gradient-primary blur-xl opacity-0 group-hover:opacity-40 transition-all duration-700" />
-            </button>
           </div>
         </div>
-        
-        {/* Enhanced Background Elements */}
-        <div className="absolute top-0 left-1/4 w-80 h-80 bg-gradient-primary opacity-15 rounded-full blur-3xl animate-float-premium" />
-        <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-primary-glow opacity-20 rounded-full blur-2xl animate-float-premium" style={{animationDelay: '4s'}} />
-        <div className="absolute top-1/2 left-1/3 w-48 h-48 bg-primary/10 rounded-full blur-xl animate-mesh-flow" />
+
+        {/* Decorative elements */}
+        <div className="absolute top-1/2 left-0 w-64 h-64 bg-primary/5 rounded-full blur-[100px] -z-10" />
+        <div className="absolute bottom-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-[100px] -z-10" />
       </section>
     );
   }
