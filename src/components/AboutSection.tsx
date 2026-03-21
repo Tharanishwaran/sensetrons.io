@@ -56,19 +56,42 @@ const AboutSection = forwardRef<HTMLElement, AboutSectionProps>(
                   ))}
                 </div>
               </div>
-
-              <div className="relative animate-reveal [animation-delay:600ms]">
-                <div className="aspect-square glass-effect rounded-[2.5rem] p-12 flex flex-col justify-center border border-primary/20 relative overflow-hidden group">
-                  <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-
-                  <div className="space-y-12 relative z-10">
-                    <div className="text-center">
-                      <div className="text-6xl font-black text-primary mb-2">2+</div>
-                      <div className="text-sm uppercase tracking-[0.2em] font-bold text-muted-foreground">Years Experience</div>
+              
+              {/* Enhanced 3D Visual Element */}
+              <div className="relative animate-slide-up-elegant" style={{animationDelay: '0.4s'}}>
+                <div className="relative p-12 glass-effect rounded-3xl shadow-massive transform-premium-hover group border border-border/30">
+                  {/* Enhanced Animated 3D Elements */}
+                  <div className="w-full h-96 flex items-center justify-center relative">
+                    <div className="relative w-40 h-40 animate-float-premium">
+                      {/* Premium Cube Faces with enhanced effects */}
+                      <div className="absolute inset-0 bg-gradient-primary rounded-2xl shadow-glow transform perspective-1200 rotate-x-12 rotate-y-12 group-hover:rotate-x-6 group-hover:rotate-y-6 transition-all duration-700" />
+                      <div className="absolute inset-0 bg-primary-glow/40 rounded-2xl shadow-massive transform perspective-1200 rotate-x-12 rotate-y-12 translate-x-3 translate-y-3 group-hover:translate-x-6 group-hover:translate-y-6 transition-all duration-700" />
+                      <div className="absolute inset-0 glass-effect rounded-2xl border border-border/30 transform perspective-1200 rotate-x-12 rotate-y-12 translate-x-6 translate-y-6 group-hover:translate-x-9 group-hover:translate-y-9 transition-all duration-700" />
                     </div>
-                    <div className="text-center">
-                      <div className="text-6xl font-black text-primary mb-2">50+</div>
-                      <div className="text-sm uppercase tracking-[0.2em] font-bold text-muted-foreground">Projects Delivered</div>
+                    
+                    {/* Floating particles */}
+                    <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary rounded-full animate-scale-pulse" />
+                    <div className="absolute bottom-1/4 right-1/4 w-3 h-3 bg-primary-glow rounded-full animate-scale-pulse" style={{animationDelay: '1s'}} />
+                    <div className="absolute top-3/4 left-3/4 w-1.5 h-1.5 bg-primary rounded-full animate-scale-pulse" style={{animationDelay: '2s'}} />
+                  </div>
+                  
+                  {/* Enhanced Stats */}
+                  <div className="grid grid-cols-3 gap-6 mt-12">
+                    <div className="text-center group-hover:scale-110 transition-all duration-500">
+                      <div className="text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent text-shadow-glow">
+                        2+
+                      </div>
+                      <div className="text-muted-foreground font-medium">
+                        Years Experience
+                      </div>
+                    </div>
+                    <div className="text-center group-hover:scale-110 transition-all duration-500" style={{transitionDelay: '0.1s'}}>
+                      <div className="text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent text-shadow-glow">
+                        15+
+                      </div>
+                      <div className="text-muted-foreground font-medium">
+                        Projects Delivered
+                      </div>
                     </div>
                     <div className="text-center">
                       <div className="text-6xl font-black text-primary mb-2">100%</div>
