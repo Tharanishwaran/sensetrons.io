@@ -24,6 +24,17 @@ const HeroSection = forwardRef<HTMLElement, HeroSectionProps>(
 
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
+            {/* Company Logo Display */}
+            <div className="flex justify-center mb-10 animate-reveal">
+              <div className="w-54 h-64 bg-black border border-white/5 shadow-massive rounded-[3.5rem] p-12 flex items-center justify-center transition-all duration-300">
+                <img
+                  src={companyLogo}
+                  alt="Sensetrons Logo"
+                  className="w-full h-full object-contain brightness-110"
+                />
+              </div>
+            </div>
+
             {/* Experience Badge */}
             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 mb-8 animate-reveal">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
@@ -46,22 +57,22 @@ const HeroSection = forwardRef<HTMLElement, HeroSectionProps>(
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-reveal [animation-delay:600ms]">
-              <button className="px-8 py-4 bg-primary text-primary-foreground rounded-full font-bold text-lg hover:opacity-90 transition-all duration-300 hover-lift shadow-lg shadow-primary/20">
+              <a href="#projects" className="px-8 py-4 bg-primary text-primary-foreground rounded-full font-bold text-lg hover:opacity-90 transition-all duration-300 hover-lift shadow-lg shadow-primary/20 cursor-pointer">
                 View Our Portfolio
-              </button>
-              <button className="px-8 py-4 glass-effect text-foreground rounded-full font-bold text-lg hover:bg-white/5 transition-all duration-300 hover-lift">
+              </a>
+              <a href="#services" className="px-8 py-4 glass-effect text-foreground rounded-full font-bold text-lg hover:bg-white/5 transition-all duration-300 hover-lift cursor-pointer">
                 Our Services
-              </button>
+              </a>
             </div>
           </div>
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-30">
+        {/* <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-30">
           <div className="w-6 h-10 border-2 border-foreground rounded-full flex justify-center p-1">
             <div className="w-1.5 h-1.5 bg-foreground rounded-full" />
           </div>
-        </div>
+        </div> */}
       </section>
     );
   }

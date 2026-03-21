@@ -1,3 +1,6 @@
+import { Rocket, Settings, Users } from "lucide-react";
+import engineeringCoreImage from "@/assets/projects/engineering_core.png";
+import companyLogo from "@/assets/company-logo.svg";
 import { cn } from "@/lib/utils";
 import { forwardRef } from "react";
 
@@ -34,24 +37,32 @@ const AboutSection = forwardRef<HTMLElement, AboutSectionProps>(
                   {[
                     {
                       title: "Innovation Driven",
-                      desc: "We don't just follow trends; we set them through rigorous R&D."
+                      desc: "We don't just follow trends; we set them through rigorous R&D and deep-tech focus.",
+                      icon: Rocket
                     },
                     {
                       title: "Technical Mastery",
-                      desc: "Our engineers possess deep expertise in modern tech stacks and architectures."
+                      desc: "Our engineers possess deep expertise in microservices and low-level architectures.",
+                      icon: Settings
                     },
                     {
                       title: "Partner-Centric",
-                      desc: "We treat your project as our own, ensuring long-term success and scalability."
+                      desc: "We treat your project as our own, ensuring long-term success and scalability.",
+                      icon: Users
                     }
                   ].map((item, i) => (
                     <div
                       key={item.title}
-                      className="p-6 glass-effect rounded-2xl hover-lift animate-reveal"
+                      className="p-6 glass-effect rounded-2xl hover-lift animate-reveal flex items-start space-x-6 border-white/5"
                       style={{ animationDelay: `${(i + 3) * 100}ms` }}
                     >
-                      <h3 className="text-xl font-bold mb-2 text-foreground">{item.title}</h3>
-                      <p className="text-muted-foreground">{item.desc}</p>
+                      <div className="w-12 h-12 bg-white/5 rounded-xl flex-shrink-0 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                        <item.icon className="w-6 h-6" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold mb-2 text-foreground font-outfit tracking-tight">{item.title}</h3>
+                        <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -93,16 +104,26 @@ const AboutSection = forwardRef<HTMLElement, AboutSectionProps>(
                         Projects Delivered
                       </div>
                     </div>
-                    <div className="text-center">
-                      <div className="text-6xl font-black text-primary mb-2">100%</div>
-                      <div className="text-sm uppercase tracking-[0.2em] font-bold text-muted-foreground">Client Success</div>
+
+                    <div className="grid grid-cols-3 gap-8 pt-8 border-t border-white/10">
+                      <div className="text-center group-hover:-translate-y-1 transition-transform">
+                        <div className="text-3xl font-black text-primary">2+</div>
+                        <div className="text-[10px] uppercase tracking-[0.2em] font-bold text-muted-foreground mt-1">Years</div>
+                      </div>
+                      <div className="text-center group-hover:-translate-y-1 transition-transform delay-75">
+                        <div className="text-3xl font-black text-primary">50+</div>
+                        <div className="text-[10px] uppercase tracking-[0.2em] font-bold text-muted-foreground mt-1">Projects</div>
+                      </div>
+                      <div className="text-center group-hover:-translate-y-1 transition-transform delay-150">
+                        <div className="text-3xl font-black text-primary">100%</div>
+                        <div className="text-[10px] uppercase tracking-[0.2em] font-bold text-muted-foreground mt-1">Success</div>
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                {/* Decorative blob */}
-                <div className="absolute -top-10 -right-10 w-40 h-40 bg-primary/20 rounded-full blur-3xl -z-10" />
-                <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl -z-10" />
+                {/* Decorative background glow */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-primary/5 rounded-full blur-[100px] pointer-events-none -z-10" />
               </div>
             </div>
           </div>
