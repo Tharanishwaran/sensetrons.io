@@ -102,16 +102,26 @@ const AboutSection = forwardRef<HTMLElement, AboutSectionProps>(
                       <div className="text-3xl font-black text-primary">50+</div>
                       <div className="text-[10px] uppercase tracking-[0.2em] font-bold text-muted-foreground mt-1">Projects</div>
                     </div>
-                    <div className="text-center group-hover:-translate-y-1 transition-transform delay-150">
-                      <div className="text-3xl font-black text-primary">100%</div>
-                      <div className="text-[10px] uppercase tracking-[0.2em] font-bold text-muted-foreground mt-1">Success</div>
+
+                    <div className="grid grid-cols-3 gap-8 pt-8 border-t border-white/10">
+                      <div className="text-center group-hover:-translate-y-1 transition-transform">
+                        <div className="text-3xl font-black text-primary">2+</div>
+                        <div className="text-[10px] uppercase tracking-[0.2em] font-bold text-muted-foreground mt-1">Years</div>
+                      </div>
+                      <div className="text-center group-hover:-translate-y-1 transition-transform delay-75">
+                        <div className="text-3xl font-black text-primary">50+</div>
+                        <div className="text-[10px] uppercase tracking-[0.2em] font-bold text-muted-foreground mt-1">Projects</div>
+                      </div>
+                      <div className="text-center group-hover:-translate-y-1 transition-transform delay-150">
+                        <div className="text-3xl font-black text-primary">100%</div>
+                        <div className="text-[10px] uppercase tracking-[0.2em] font-bold text-muted-foreground mt-1">Success</div>
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                {/* Decorative blobs */}
-                <div className="absolute -top-10 -right-10 w-40 h-40 bg-primary/20 rounded-full blur-3xl -z-10" />
-                <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl -z-10" />
+                {/* Decorative background glow */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-primary/5 rounded-full blur-[100px] pointer-events-none -z-10" />
               </div>
             </div>
           </div>
