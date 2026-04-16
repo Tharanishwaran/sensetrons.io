@@ -92,7 +92,7 @@ export const ContactLeadGen = () => {
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                                     <div className="space-y-2">
                                         <label className="text-xs font-bold uppercase tracking-widest text-muted-foreground ml-1">Full Name</label>
-                                        <input type="text" placeholder="John Doe" className="input-enterprise" required />
+                                        <input type="text" placeholder="Name" className="input-enterprise" required />
                                     </div>
                                     <div className="space-y-2">
                                         <label className="text-xs font-bold uppercase tracking-widest text-muted-foreground ml-1">Phone Number</label>
@@ -102,7 +102,7 @@ export const ContactLeadGen = () => {
 
                                 <div className="space-y-2">
                                     <label className="text-xs font-bold uppercase tracking-widest text-muted-foreground ml-1">Business Email</label>
-                                    <input type="email" placeholder="john@company.com" className="input-enterprise" required />
+                                    <input type="email" placeholder="name@company.com" className="input-enterprise" required />
                                 </div>
 
                                 <div className="space-y-2">

@@ -5,6 +5,14 @@ import {
     Smartphone, Search, Layers, FileText, BrainCircuit, Globe
 } from "lucide-react";
 
+// Import illustrations
+import hospitalImg from "@/assets/illustrations/hospital.png";
+import garmentsImg from "@/assets/illustrations/garments.png";
+import manufacturingImg from "@/assets/illustrations/manufacturing.png";
+import borewellImg from "@/assets/illustrations/borewell.png";
+import retailImg from "@/assets/illustrations/retail.png";
+import customImg from "@/assets/illustrations/custom.png";
+
 export type ProductData = {
     id: string;
     title: string;
@@ -13,7 +21,7 @@ export type ProductData = {
     color: string;
     bg: string;
     description: string;
-    heroImage?: string;
+    heroImage: string;
     features: {
         title: string;
         desc: string;
@@ -31,6 +39,7 @@ export const productsData: Record<string, ProductData> = {
         icon: Hospital,
         color: "text-blue-600",
         bg: "bg-blue-600/10",
+        heroImage: hospitalImg,
         description: "A comprehensive, cloud-native HMS designed to streamline clinical, administrative, and financial operations. From OPD management to complex IPD billing, we cover the entire patient journey.",
         benefits: [
             "40% reduction in patient OPD wait times",
@@ -75,6 +84,7 @@ export const productsData: Record<string, ProductData> = {
         icon: Shirt,
         color: "text-orange-600",
         bg: "bg-orange-600/10",
+        heroImage: garmentsImg,
         description: "The ultimate ERP for garment manufacturers and exporters. Manage styles, size-color matrices, and production lines with granular precision.",
         benefits: [
             "Accurate style-wise costing and BOM",
@@ -119,6 +129,7 @@ export const productsData: Record<string, ProductData> = {
         icon: Factory,
         color: "text-purple-600",
         bg: "bg-purple-600/10",
+        heroImage: manufacturingImg,
         description: "Full-scale manufacturing execution system (MES) and ERP. Synchronize your supply chain with your production floor to achieve zero-waste operations.",
         benefits: [
             "Optimized machine utilization and scheduling",
@@ -163,6 +174,7 @@ export const productsData: Record<string, ProductData> = {
         icon: Droplets,
         color: "text-teal-600",
         bg: "bg-teal-600/10",
+        heroImage: borewellImg,
         description: "Industry-first specialized ERP for borewell contractors and rig owners. Manage quotations, on-site rigs, material usage, and staff logs from a single mobile-friendly app.",
         benefits: [
             "Instant quotation generation on field",
@@ -207,6 +219,7 @@ export const productsData: Record<string, ProductData> = {
         icon: ShoppingCart,
         color: "text-green-600",
         bg: "bg-green-600/10",
+        heroImage: retailImg,
         description: "Modular POS and inventory system for retail stores to large chains. Lightning-fast billing integrated with smart stock replenishment and customer loyalty.",
         benefits: [
             "Instant barcode-based billing (0.5s per item)",
@@ -251,6 +264,7 @@ export const productsData: Record<string, ProductData> = {
         icon: Settings,
         color: "text-violet-600",
         bg: "bg-violet-600/10",
+        heroImage: customImg,
         description: "Our core philosophy is that the software should fit the business, not vice versa. We build custom ERP modules tailored to your unique internal processes and challenges.",
         benefits: [
             "Zero compromises on internal workflows",

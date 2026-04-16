@@ -2,19 +2,12 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle, PlayCircle, Star, TrendingUp, Shield, Users } from "lucide-react";
 
-const trustLogos = [
-    "HOSPITAL CHAIN", "TEXTILE CO.", "STEEL MFG", "WATER CORP", "RETAIL GROUP", "PHARMA LTD",
-];
-
 const socialProof = [
-    { icon: Users, value: "50+", label: "Active Clients" },
-    { icon: TrendingUp, value: "5+", label: "Industries" },
-    { icon: Shield, value: "99.9%", label: "Uptime SLA" },
 ];
 
 export const Hero = () => {
     return (
-        <section className="relative min-h-screen flex flex-col justify-center overflow-hidden hero-bg pt-16">
+        <section className="relative h-auto flex flex-col justify-center overflow-hidden hero-bg pt-16">
             {/* Subtle grid bg */}
             <div className="absolute inset-0 dot-grid opacity-50 dark:opacity-20 pointer-events-none" />
 
@@ -24,7 +17,7 @@ export const Hero = () => {
             <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
                 style={{ background: "radial-gradient(circle, hsla(221,83%,53%,.07) 0%, transparent 70%)" }} />
 
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 py-20 w-full relative z-10">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-20 pb-10 w-full relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-[1fr,1fr] gap-12 xl:gap-20 items-center">
 
                     {/* LEFT — Copy */}
@@ -36,7 +29,7 @@ export const Hero = () => {
                             transition={{ duration: 0.5 }}
                             className="flex items-center gap-2.5 mb-6"
                         >
-                            <span className="section-label">🏢 Enterprise ERP Platform</span>
+                            <span className="section-label"> Enterprise ERP Platform</span>
                             <span className="badge badge-green">
                                 <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
                                 Trusted by 50+ Businesses
@@ -186,37 +179,6 @@ export const Hero = () => {
                             </div>
                         </div>
                     </motion.div>
-                </div>
-
-                {/* Stats row */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.55, duration: 0.6 }}
-                    className="mt-20 pt-10 border-t border-border grid grid-cols-3 md:grid-cols-3 gap-8 max-w-lg"
-                >
-                    {socialProof.map((s) => (
-                        <div key={s.label} className="stat-item text-left">
-                            <div className="stat-number">{s.value}</div>
-                            <div className="stat-label">{s.label}</div>
-                        </div>
-                    ))}
-                </motion.div>
-            </div>
-
-            {/* Client logo marquee strip */}
-            <div className="w-full border-t border-border bg-surface/50 py-6 mt-4 overflow-hidden">
-                <p className="text-center text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-4">
-                    Trusted by businesses across India
-                </p>
-                <div className="flex overflow-hidden">
-                    <div className="logo-marquee gap-16 items-center whitespace-nowrap">
-                        {[...trustLogos, ...trustLogos].map((logo, i) => (
-                            <span key={i} className="text-sm font-black text-muted-foreground/40 tracking-widest inline-block px-8">
-                                {logo}
-                            </span>
-                        ))}
-                    </div>
                 </div>
             </div>
         </section>
