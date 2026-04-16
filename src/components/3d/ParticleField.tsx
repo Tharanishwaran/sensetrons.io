@@ -1,0 +1,91 @@
+import { useCallback } from "react";
+import type { Container, Engine } from "@tsparticles/engine";
+import Particles from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim";
+
+export const ParticleField = () => {
+    const particlesInit = useCallback(async (engine: Engine) => {
+        await loadSlim(engine);
+    }, []);
+
+    const particlesLoaded = useCallback(async (container: Container | undefined) => {
+        // console.log(container);
+    }, []);
+
+    return (
+        <div className="absolute inset-0 -z-10 pointer-events-none">
+            <Particles
+                id="tsparticles"
+                init={particlesInit}
+                loaded={particlesLoaded}
+                options={{
+                    background: {
+                        color: {
+                            value: "transparent",
+                        },
+                    },
+                    fpsLimit: 120,
+                    interactivity: {
+                        events: {
+                            onHover: {
+                                enable: true,
+                                mode: "grab",
+                            },
+                            resize: {
+                                enable: true,
+                            },
+                        },
+                        modes: {
+                            grab: {
+                                distance: 140,
+                                links: {
+                                    opacity: 0.5,
+                                    color: "#6b46d4"
+                                },
+                            },
+                        },
+                    },
+                    particles: {
+                        color: {
+                            value: ["#6b46d4", "#00e8c6", "#ffffff"],
+                        },
+                        links: {
+                            color: "#6b46d4",
+                            distance: 150,
+                            enable: true,
+                            opacity: 0.1,
+                            width: 1,
+                        },
+                        move: {
+                            direction: "none",
+                            enable: true,
+                            outModes: {
+                                default: "bounce",
+                            },
+                            random: false,
+                            speed: 0.8,
+                            straight: false,
+                        },
+                        number: {
+                            density: {
+                                enable: true,
+                                // area: 800, // area is replaced by width/height in v3 or handled differently
+                            },
+                            value: 60,
+                        },
+                        opacity: {
+                            value: { min: 0.1, max: 0.5 },
+                        },
+                        shape: {
+                            type: "circle",
+                        },
+                        size: {
+                            value: { min: 1, max: 3 },
+                        },
+                    },
+                    detectRetina: true,
+                }}
+            />
+        </div>
+    );
+};
